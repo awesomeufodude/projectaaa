@@ -1,5 +1,6 @@
 import { lazy, Suspense, useRef } from "react"
 import Footer from "./components/Footer"
+import Loading from "./components/Loading"
 
 const Header = lazy(() => import("./components/Header"))
 const BookSection = lazy(() => import("./components/BookSection"))
@@ -15,7 +16,7 @@ function App() {
   const NftRef = useRef(null)
   return (
     <div className="bg-project_black min-h-screen">
-    <Suspense fallback={<h1 className="text-white">Loading...</h1>}>
+    <Suspense fallback={<Loading/>}>
         <Header booksRef={booksRef} authorsRef={authorsRef} gamesRef={gamesRef} NftRef={NftRef} />
         <BookSection booksRef={booksRef} />
         <Authors authorsRef={authorsRef} />
