@@ -284,7 +284,7 @@ function BookSection({booksRef}) {
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.8}}
 
-          className="bg-white flex items-center justify-center absolute lg:top-1/2 lg:left-10 left-[35%] top-[100%] lg:w-20 lg:h-20 w-10 h-10 rounded-full"
+          className="bg-white flex items-center justify-center absolute lg:top-1/2 lg:left-10 left-[35%] top-[100%] lg:w-20 lg:h-20 w-10 h-10 rounded-full lg:mt-0  mt-10"
           onClick={prevBtn}
         >
           <MdArrowBackIos className='text-black lg:text-2xl'/>
@@ -298,7 +298,7 @@ function BookSection({booksRef}) {
           }}
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.8}}
-          className="bg-white flex items-center justify-center absolute lg:top-1/2 lg:right-10 right-[35%] top-[100%] lg:w-20 lg:h-20 w-10 h-10 rounded-full"
+          className="bg-white flex items-center justify-center absolute lg:top-1/2 lg:right-10 right-[35%] top-[100%] lg:w-20 lg:h-20 w-10 h-10 rounded-full lg:mt-0 mt-10"
           onClick={nextBtn}
         >
           <MdArrowForwardIos className='text-black lg:text-2xl'/>
