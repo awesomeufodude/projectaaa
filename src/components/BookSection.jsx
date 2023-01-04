@@ -11,6 +11,7 @@ const BuyBooks = [
   {
     title: "BUY VOLUME 1",
     description: "The Chosen / Los Elegidos / Os Escolhidos",
+    about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     buttonlink: [
       {
         title: "English",
@@ -29,6 +30,7 @@ const BuyBooks = [
    {
      title: "BUY VOLUME 2",
      description: "The Cycle / El Ciclo / O Ciclo",
+     about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
        buttonlink: [
       {
         title: "English",
@@ -47,6 +49,7 @@ const BuyBooks = [
     {
       title: "Coming Soon",
       description: "The Chosen / Los Elegidos / Os Escolhidos",
+      about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         buttonlink: [
       {
         title: "English",
@@ -109,10 +112,10 @@ function BookSection({booksRef}) {
     }
   }
 
-  useEffect(() => {
+  /*useEffect(() => {
    timer = setInterval(() => nextBtn(), 2000)
   return () => clearInterval(timer)
-  });
+  });*/
 
   const variants = {
     center: {
@@ -166,9 +169,13 @@ function BookSection({booksRef}) {
     },
   }
 
+  //onMouseEnter={() => clearInterval(timer)} onMouseLeave={() => {nextBtn()}}
+
   return (
-    <><motion.div className="flex justify-center mt-10 scroll-mt-28" ref={booksRef}>
-      <motion.div className="relative lg:w-[350px] lg:h-[500px] w-[200px] h-[300px]" onMouseEnter={() => clearInterval(timer)} onMouseLeave={() => {nextBtn()}}>
+    <>
+      <div>
+         <motion.div className="flex justify-center mt-10 scroll-mt-28" ref={booksRef} >
+      <motion.div className="relative lg:w-[350px] lg:h-[500px] w-[200px] h-[300px]" >
         <AnimatePresence initial={false}>
           <motion.div
             key={LeftId}
@@ -198,8 +205,8 @@ function BookSection({booksRef}) {
         </AnimatePresence>
       </motion.div>
     </motion.div>
-      <motion.div className="flex justify-center mt-14">
-        <motion.div className="relative lg:w-[350px] w-[200px] lg:h-[200px] h-[350px]" onMouseEnter={() => clearInterval(timer)} onMouseLeave={() => {nextBtn()}}>
+      <motion.div className="flex justify-center mt-14" >
+        <motion.div className="relative lg:w-[350px] w-[200px] lg:h-[200px] h-[350px]" >
           <AnimatePresence initial={false}>
              <motion.div
             key={LeftId}
@@ -219,7 +226,8 @@ function BookSection({booksRef}) {
                 {BuyBooks[LeftId].buttonlink?.map((link, i) => (
                   <a href={link?.link} key={i} className="text-project_white bg-project_orange py-1 px-3 rounded-md font-semibold text-sm" target="_blank">{link?.title}</a>
                 ))}
-              </div>
+                </div>
+                <p className='text-gray-300 text-xs  text-center mt-4'>{BuyBooks[LeftId].about}</p>
           </motion.div>
           <motion.div
             variants={variants}
@@ -238,7 +246,8 @@ function BookSection({booksRef}) {
                 {BuyBooks[CenterId].buttonlink?.map((link, i) => (
                   <a href={link?.link} key={i} className="text-project_white bg-project_orange py-1 px-3 rounded-md font-semibold text-sm" target="_blank">{link?.title}</a>
                 ))}
-              </div>
+                </div>
+                <p className='text-gray-300 text-xs text-center mt-4'>{BuyBooks[CenterId].about}</p>
             </motion.div>
             <motion.div
             key={RightId}
@@ -258,11 +267,13 @@ function BookSection({booksRef}) {
                 {BuyBooks[RightId].buttonlink?.map((link, i) => (
                   <a href={link?.link} key={i} className="text-project_white bg-project_orange py-1 px-3 rounded-md font-semibold text-sm" target="_blank">{link?.title}</a>
                 ))}
-              </div>
+                </div>
+                <p className='text-gray-300 text-xs  text-center mt-4'>{BuyBooks[RightId].about}</p>
           </motion.div>
         </AnimatePresence>
       </motion.div>
       </motion.div>
+     </div>
       <motion.button
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -273,7 +284,7 @@ function BookSection({booksRef}) {
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.8}}
 
-          className="bg-white flex items-center justify-center absolute lg:top-1/2 lg:left-10 left-[35%] top-[100%] lg:w-20 lg:h-20 w-10 h-10 rounded-full"
+          className="bg-white flex items-center justify-center absolute lg:top-1/2 lg:left-10 left-[35%] top-[100%] lg:w-20 lg:h-20 w-10 h-10 rounded-full lg:mt-0  mt-10"
           onClick={prevBtn}
         >
           <MdArrowBackIos className='text-black lg:text-2xl'/>
@@ -287,11 +298,12 @@ function BookSection({booksRef}) {
           }}
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.8}}
-          className="bg-white flex items-center justify-center absolute lg:top-1/2 lg:right-10 right-[35%] top-[100%] lg:w-20 lg:h-20 w-10 h-10 rounded-full"
+          className="bg-white flex items-center justify-center absolute lg:top-1/2 lg:right-10 right-[35%] top-[100%] lg:w-20 lg:h-20 w-10 h-10 rounded-full lg:mt-0 mt-10"
           onClick={nextBtn}
         >
           <MdArrowForwardIos className='text-black lg:text-2xl'/>
-        </motion.button></>
+      </motion.button>
+    </>
   )
 }
 

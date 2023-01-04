@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaExternalLinkAlt } from "react-icons/fa"
 import { Splide, SplideSlide } from '@splidejs/react-splide'
+import LazyLoad from 'react-lazy-load';
 import '@splidejs/react-splide/css';
 import nft1 from "../assets/nft (1).jpg"
 import nft2 from "../assets/nft (2).jpg"
@@ -84,7 +85,7 @@ const Nftdata = [
     }
 ]
 
-function NFT({NftRef}) {
+function NFT({NftRef, setIsModalOpen, setNftId}) {
   return (
     <div className='p-4 mt-10 scroll-mt-28' ref={NftRef}>
      <h1 className="text-project_white lg:text-8xl text-4xl text-center font-bold">NFT collection</h1>
@@ -92,7 +93,8 @@ function NFT({NftRef}) {
           <div className='flex items-center justify-center mt-4'>
                <a href="#" className='flex items-center gap-3 bg-project_black_shade px-4 py-2 lg:text-3xl text-xl font-extrabold text-project_white rounded-lg group cursor-pointer z-40'><h2>Explore</h2><FaExternalLinkAlt className='text-project_orange transition-all ease-linear duration-100 group-hover:translate-x-1'/></a>
           </div>
-          <Splide aria-label="CCG" options={{
+          
+               <Splide aria-label="CCG" options={{
               perPage: 4,
               autoplay: true,
               type    : 'loop',
@@ -123,8 +125,10 @@ function NFT({NftRef}) {
           className="my-10 w-[90%] mx-auto"
           >
                {Nftdata?.map((nft, i) => ( <SplideSlide key={i}>
-         <div className='w-[300px] bg-project_black_shade mx-auto group p-3 rounded-lg z-[999]' >
-                  <img src={images[i]} className="w-[250px] mx-auto transition-all ease-in duration-150 group-hover:-translate-y-2 group-hover:scale-105 rounded-md" loading='lazy'/> 
+                   <div className='w-[300px] bg-project_black_shade mx-auto group p-3 rounded-lg z-[999]' onClick={() => { setIsModalOpen(true);  setNftId(i) }}>
+                <LazyLoad offset={300}>
+                            <img src={images[i]} className="w-[250px] mx-auto transition-all ease-in duration-150 group-hover:-translate-y-2 group-hover:scale-105 rounded-md"/> 
+                 </LazyLoad>
                   <div>
                      <h1 className='text-project_white text-2xl font-semibold text-center mt-3'>{nft?.title}</h1>
                       <p className='text-project_white/50 text-center w-[90%] mx-auto mt-2'>
@@ -141,6 +145,7 @@ function NFT({NftRef}) {
   
         
 </Splide>
+        
           
             
    
