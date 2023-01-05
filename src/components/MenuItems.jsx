@@ -1,7 +1,7 @@
 import React from 'react'
-
 import { motion } from "framer-motion";
 import HeaderSocialMediaLink from './HeaderSocialMediaLink';
+import CopyRight from './CopyRight';
 
 
 const variants = {
@@ -61,11 +61,6 @@ function MenuItems({ active, setActive, Links, isOpen, booksRef, authorsRef, gam
     }
       <motion.li variants={variants} className="mt-10">
         <HeaderSocialMediaLink isOpen={isOpen} />
-      </motion.li>
-       <motion.li variants={variants} className="mt-10">
-        <div className='text-center bg-project_black text-gray-500 p-2 box-border rounded-md'>
-          <h1>Copyright © 2022</h1>
-       </div>
       </motion.li>
     </>
   );

@@ -8,6 +8,7 @@ const Authors = lazy(() => import("./components/Authors"))
 const Games = lazy(() => import("./components/Games"))
 const NFT = lazy(() => import("./components/NFT"))
 const ImageModal = lazy(() => import("./components/ImageModal"))
+const CopyRight = lazy(() => import("./components/CopyRight"))
  
 
 function App() {
@@ -24,9 +25,12 @@ function App() {
         <Header booksRef={booksRef} authorsRef={authorsRef} gamesRef={gamesRef} NftRef={NftRef} />
         <BookSection booksRef={booksRef} />
         <Authors authorsRef={authorsRef} />
-        <h1 className="text-project_white lg:text-8xl text-4xl text-center font-bold my-16">Project: A.A.A. Series</h1>
+        
         <Games gamesRef={gamesRef} />
         <NFT NftRef={NftRef} setIsModalOpen={setIsModalOpen} setNftId={setNftId} />
+        <div className="flex items-center justify-center mb-5">
+          <CopyRight/>
+        </div>
         <Footer/>
       </Suspense>
   </div>
