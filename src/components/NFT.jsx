@@ -125,7 +125,7 @@ function NFT({NftRef, setIsModalOpen, setNftId}) {
           className="my-10 w-[90%] mx-auto"
           >
                {Nftdata?.map((nft, i) => ( <SplideSlide key={i}>
-                   <div className='w-[300px] bg-project_black_shade mx-auto group p-3 rounded-lg z-[999]' onClick={() => { setIsModalOpen(true);  setNftId(i) }}>
+                   <div className='w-[300px] bg-project_black_shade mx-auto group p-3 rounded-lg z-[999]' onClick={(e) => { e.preventDefault(); setIsModalOpen(true);  setNftId(i) }}>
                 <LazyLoad offset={300}>
                             <img src={images[i]} className="w-[250px] mx-auto transition-all ease-in duration-150 group-hover:-translate-y-2 group-hover:scale-105 rounded-md"/> 
                  </LazyLoad>

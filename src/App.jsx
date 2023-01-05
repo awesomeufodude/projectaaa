@@ -24,7 +24,7 @@ function App() {
         <Header booksRef={booksRef} authorsRef={authorsRef} gamesRef={gamesRef} NftRef={NftRef} />
         <BookSection booksRef={booksRef} />
         <Authors authorsRef={authorsRef} />
-        <h1 className="text-project_white lg:text-8xl text-4xl text-center font-bold my-16">Project: A.A.A. Series</h1>
+        
         <Games gamesRef={gamesRef} />
         <NFT NftRef={NftRef} setIsModalOpen={setIsModalOpen} setNftId={setNftId} />
         <Footer/>

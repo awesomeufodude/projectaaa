@@ -31,11 +31,13 @@ const images =  [
 
 function ImageModal({id, setIsModalOpen}) {
   return (
-      <div className='w-full min-h-screen bg-black/70 z-[9999] flex items-center justify-center fixed top-0'>
+      <div className='w-full min-h-screen bg-black/70 z-[9999] flex items-center justify-center sticky overflow-y-auto top-0'>
           <div className='flex items-center justify-center w-10 h-10 bg-white absolute top-5 rounded-full group cursor-pointer' onClick={() => setIsModalOpen(false)}>
               <MdClear className='text-black text-xl  group-hover:text-red-500'/>
           </div>
-          <img src={images[id]}  className="w-[390px] h-[590px]"/>
+      <div >
+        <img src={images[id]} className="lg:w-[700px] lg:h-[900px] w-[300px] h-[450px]"/>
+          </div>
     </div>
   )
 }
