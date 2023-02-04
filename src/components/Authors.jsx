@@ -55,6 +55,9 @@ function Authors({authorsRef}) {
 </Splide>
      
  </div>
+      <h3 className="text-project_white lg:text-8xl text-4xl text-center font-bold">BUY/OWN THE RIGHTS OF THIS SERIES AND GAME</h3>
+      <p className="text-project_white/50 text-center mt-10 lg:w-1/2 text-lg font-semibold lg:mx-auto">Contact: luisfelipejimenezroldan@gmail.com</p>
+      <p className='text-project_white text-center mt-5'>Rights owner</p>
     </section>
   )
 }
