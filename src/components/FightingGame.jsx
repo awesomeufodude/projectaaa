@@ -5,14 +5,14 @@ import '@splidejs/react-splide/css';
 import Apple from "../assets/applelogo.png"
 import Android from "../assets/androidlogo.png"
 import Steam from "../assets/steamlogo.png"
-import Battle1 from "../assets/BattleScene1.jpg"
-import Battle2 from "../assets/BattleScene2.png"
+import Battle1 from "../assets/BattleScene1resize.jpg"
+import Battle2 from "../assets/BattleScene2resize.png"
 
 
 function FightingGame() {
   return (
     <div className='p-2 mt-10'>
-        <h2 className='text-project_white text-center mt-10 mb-5 lg:text-4xl font-bold text-3xl'>Fighting game</h2>
+        <h2 className='text-project_white text-center mt-10 mb-5 lg:text-4xl font-bold text-3xl'>Arcade fighting</h2>
           <p className='text-project_white text-center text-xs'>We are releasing our game Q4, 2023.</p>
           <div className='flex items-center justify-center p-2 mt-5'> 
               <div className='flex items-center gap-5'>

@@ -3,19 +3,18 @@ import { FaExternalLinkAlt } from "react-icons/fa"
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import LazyLoad from 'react-lazy-load';
 import '@splidejs/react-splide/css';
-import nft1 from "../assets/nft (1).jpg"
-import nft2 from "../assets/nft (2).jpg"
-import nft3 from "../assets/nft (3).jpg"
-import nft4 from "../assets/nft (4).jpg"
-import nft5 from "../assets/nft (5).jpg"
-import nft6 from "../assets/nft (6).jpg"
-import nft7 from "../assets/nft (7).jpg"
-import nft8 from "../assets/nft (8).jpg"
-import nft9 from "../assets/nft (9).jpg"
-import nft10 from "../assets/nft (10).jpg"
-import nft11 from "../assets/nft (11).jpg"
-import nft12 from "../assets/nft (12).jpg"
-
+import nft1 from "../assets/nftresize (1).jpg"
+import nft2 from "../assets/nftresize (2).jpg"
+import nft3 from "../assets/nftresize (3).jpg"
+import nft4 from "../assets/nftresize (4).jpg"
+import nft5 from "../assets/nftresize (5).jpg"
+import nft6 from "../assets/nftresize (6).jpg"
+import nft7 from "../assets/nftresize (7).jpg"
+import nft8 from "../assets/nftresize (8).jpg"
+import nft9 from "../assets/nftresize (9).jpg"
+import nft10 from "../assets/nftresize (10).jpg"
+import nft11 from "../assets/nftresize (11).jpg"
+import nft12 from "../assets/nftresize (12).jpg"
 
 const images =  [
     nft1,
@@ -91,7 +90,7 @@ function NFT({NftRef, setIsModalOpen, setNftId}) {
      <h1 className="text-project_white lg:text-8xl text-4xl text-center font-bold">NFT collection</h1>
     <p className="text-project_white/50 text-center mt-5 lg:w-1/2 lg:text-lg font-semibold lg:mx-auto">Every piece of art that you get to own from our collection, its unique; there are 270 NFTs at OpenSea.</p>
           <div className='flex items-center justify-center mt-4'>
-               <a href="#" className='flex items-center gap-3 bg-project_black_shade px-4 py-2 lg:text-3xl text-xl font-extrabold text-project_white rounded-lg group cursor-pointer z-40'><h2>Explore</h2><FaExternalLinkAlt className='text-project_orange transition-all ease-linear duration-100 group-hover:translate-x-1'/></a>
+               <a href="https://opensea.io/collection/projectaaa-collection" className='flex items-center gap-3 bg-project_black_shade px-4 py-2 lg:text-3xl text-xl font-extrabold text-project_white rounded-lg group cursor-pointer z-40'><h2>Explore</h2><FaExternalLinkAlt className='text-project_orange transition-all ease-linear duration-100 group-hover:translate-x-1'/></a>
           </div>
           
                <Splide aria-label="CCG" options={{
@@ -125,7 +124,7 @@ function NFT({NftRef, setIsModalOpen, setNftId}) {
           className="my-10 w-[90%] mx-auto"
           >
                {Nftdata?.map((nft, i) => ( <SplideSlide key={i}>
-                   <div className='w-[300px] bg-project_black_shade mx-auto group p-3 rounded-lg z-[999]' onClick={(e) => { e.preventDefault(); setIsModalOpen(true);  setNftId(i) }}>
+                   <div className='w-[300px] bg-project_black_shade mx-auto group p-3 rounded-lg z-[999] cursor-pointer' onClick={(e) => { e.stopPropagation(); setIsModalOpen(true);  setNftId(i) }}>
                 <LazyLoad offset={300}>
                             <img src={images[i]} className="w-[250px] mx-auto transition-all ease-in duration-150 group-hover:-translate-y-2 group-hover:scale-105 rounded-md"/> 
                  </LazyLoad>
@@ -135,7 +134,7 @@ function NFT({NftRef, setIsModalOpen, setNftId}) {
                           {nft?.description}
                       </p>
                       <div className='flex items-center justify-center mt-5'>
-                           <a href={nft?.link} className='text-project_white bg-project_orange px-3 py-1 rounded-md text-lg font-semibold'>
+                           <a href={nft?.link} target='_blank' className='text-project_white bg-project_orange px-3 py-1 rounded-md text-lg font-semibold' onClick={(e) => e.stopPropagation()}>
                           Get NFT
                       </a>
                      </div>

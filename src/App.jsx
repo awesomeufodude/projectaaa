@@ -1,5 +1,5 @@
 import { lazy, Suspense, useRef, useState } from "react"
-import Footer from "./components/Footer"
+//import Footer from "./components/Footer"
 import Loading from "./components/Loading"
 
 const Header = lazy(() => import("./components/Header"))
@@ -9,6 +9,7 @@ const Games = lazy(() => import("./components/Games"))
 const NFT = lazy(() => import("./components/NFT"))
 const ImageModal = lazy(() => import("./components/ImageModal"))
 const CopyRight = lazy(() => import("./components/CopyRight"))
+const OwningNovel = lazy(() => import("./components/OwningNovel"))
  
 
 function App() {
@@ -25,13 +26,13 @@ function App() {
         <Header booksRef={booksRef} authorsRef={authorsRef} gamesRef={gamesRef} NftRef={NftRef} />
         <BookSection booksRef={booksRef} />
         <Authors authorsRef={authorsRef} />
-        
+        <OwningNovel/>
         <Games gamesRef={gamesRef} />
         <NFT NftRef={NftRef} setIsModalOpen={setIsModalOpen} setNftId={setNftId} />
-        <div className="flex items-center justify-center mb-5">
+        <div className="flex items-center justify-center py-4">
           <CopyRight/>
         </div>
-        <Footer/>
+       {/*<Footer/>*/}
       </Suspense>
   </div>
   )

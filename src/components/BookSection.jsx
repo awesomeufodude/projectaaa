@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import Book1 from "../assets/book1.png"
-import Book2 from "../assets/book2.png"
-import Book3 from "../assets/comingsoon.png"
+import Book1 from "../assets/book1resize.png"
+import Book2 from "../assets/book2resize.png"
+import Book3 from "../assets/comingsoonresize.png"
 import {MdArrowBackIos,MdArrowForwardIos} from "react-icons/md"
 
 const Data = [Book1, Book2, Book3]
