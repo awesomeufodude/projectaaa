@@ -4,17 +4,17 @@ import '@splidejs/react-splide/css';
 import { MdOutline3DRotation } from "react-icons/md"
 import LazyLoad from 'react-lazy-load';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import CCGMAYA1 from "../assets/CCGMAYA1.png"
-import CCGMAYA2 from "../assets/CCGMAYA2.png"
-import CCGMAYA3 from "../assets/CCGMAYA3.png"
-import CCGHITANI from "../assets/CCGHITANI.png"
-import CCGA0 from "../assets/CCGA0.png"
-import CCGAAAUNIT1 from "../assets/CCGAAAUNIT1.png"
-import CCGAMIN from "../assets/CCGAMIN.png"
-import CCGFALLENANGELAMSHIRO from "../assets/CCGFALLENANGELAMSHIRO.png"
-import Stage1back from "../assets/Stage1back.png"
-import Stage2back from "../assets/Stage2back.png"
-import Stage3back from "../assets/Stage3back.png"
+import CCGMAYA1 from "../assets/CCGMAYA1resize.png"
+import CCGMAYA2 from "../assets/CCGMAYA2resize.png"
+import CCGMAYA3 from "../assets/CCGMAYA3resize.png"
+import CCGHITANI from "../assets/CCGHITANIresize.png"
+import CCGA0 from "../assets/CCGA0resize.png"
+import CCGAAAUNIT1 from "../assets/CCGAAAUNIT1resize.png"
+import CCGAMIN from "../assets/CCGAMINresize.png"
+import CCGFALLENANGELAMSHIRO from "../assets/CCGFALLENANGELAMSHIROresize.png"
+import Stage1back from "../assets/Stage1backresize.png"
+import Stage2back from "../assets/Stage2backresize.png"
+import Stage3back from "../assets/Stage3backresize.png"
 
 
 
@@ -63,7 +63,7 @@ function CCG() {
       >
         <SplideSlide>
           
-          <div className={`scene relative lg:w-[490px] w-[90%] h-[600px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya1")} data-ccg-id="maya1">
+          <div className={`scene relative lg:w-[490px] w-[90%] h-[450px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya1")} data-ccg-id="maya1">
            
               
             <div className={`card ${isFlipped && id === "maya1" ? "is-flipped" : ""}`}>
@@ -90,7 +90,7 @@ function CCG() {
         </SplideSlide>
         <SplideSlide>
          
-            <div className={`scene relative lg:w-[490px] w-[90%] h-[600px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya2")} data-ccg-id="maya2">
+            <div className={`scene relative lg:w-[490px] w-[90%] h-[450px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya2")} data-ccg-id="maya2">
   <div className={`card ${isFlipped && id === "maya2" ? "is-flipped" : ""}`}>
               <div className="card__face card__face--front">
                 <LazyLoad offset={300} onContentVisible={() => setIsLoaded(true)}>
@@ -113,7 +113,7 @@ function CCG() {
        
         </SplideSlide>
         <SplideSlide>
-         <div className={`scene relative lg:w-[490px] w-[90%] h-[600px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya3")} data-ccg-id="maya3">
+         <div className={`scene relative lg:w-[490px] w-[90%] h-[450px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya3")} data-ccg-id="maya3">
   <div className={`card ${isFlipped && id === "maya3" ? "is-flipped" : ""}`}>
               <div className="card__face card__face--front">
                 <LazyLoad offset={300} onContentVisible={() => setIsLoaded(true)}>
@@ -135,7 +135,7 @@ function CCG() {
 </div>
         </SplideSlide>
         <SplideSlide>
-          <div className={`scene relative lg:w-[490px] w-[90%] h-[600px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya4")} data-ccg-id="maya4">
+          <div className={`scene relative lg:w-[490px] w-[90%] h-[450px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya4")} data-ccg-id="maya4">
   <div className={`card ${isFlipped && id === "maya4" ? "is-flipped" : ""}`}>
               <div className="card__face card__face--front">
                 <LazyLoad offset={300} onContentVisible={() => setIsLoaded(true)}>
@@ -158,7 +158,7 @@ function CCG() {
           
         </SplideSlide>
         <SplideSlide>
-            <div className={`scene relative lg:w-[490px] w-[90%] h-[600px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya5")} data-ccg-id="maya5">
+            <div className={`scene relative lg:w-[490px] w-[90%] h-[450px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya5")} data-ccg-id="maya5">
   <div className={`card ${isFlipped && id === "maya5" ? "is-flipped" : ""}`}>
               <div className="card__face card__face--front">
                 <LazyLoad offset={300} onContentVisible={() => setIsLoaded(true)}>
@@ -180,7 +180,7 @@ function CCG() {
 </div>
         </SplideSlide>
         <SplideSlide>
-           <div className={`scene relative lg:w-[490px] w-[90%] h-[600px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya6")} data-ccg-id="maya6">
+           <div className={`scene relative lg:w-[490px] w-[90%] h-[450px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya6")} data-ccg-id="maya6">
   <div className={`card ${isFlipped && id === "maya6" ? "is-flipped" : ""}`}>
               <div className="card__face card__face--front">
                 <LazyLoad offset={300} onContentVisible={() => setIsLoaded(true)}>
@@ -203,7 +203,7 @@ function CCG() {
          
         </SplideSlide>
         <SplideSlide>
-          <div className={`scene relative lg:w-[490px] w-[90%] h-[600px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya7")} data-ccg-id="maya7">
+          <div className={`scene relative lg:w-[490px] w-[90%] h-[450px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya7")} data-ccg-id="maya7">
   <div className={`card ${isFlipped && id === "maya7" ? "is-flipped" : ""}`}>
               <div className="card__face card__face--front">
                 <LazyLoad offset={300} onContentVisible={() => setIsLoaded(true)}>
@@ -225,7 +225,7 @@ function CCG() {
 </div>
         </SplideSlide>
         <SplideSlide>
-          <div className={`scene relative lg:w-[490px] w-[90%] h-[600px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya8")} data-ccg-id="maya8">
+          <div className={`scene relative lg:w-[490px] w-[90%] h-[450px] lg:h-[650px] mx-auto group ${isLoaded ? "" : "bg-gray-100 animate-pulse rounded-lg"}`} onClick={(e) => handleFlip(e, "maya8")} data-ccg-id="maya8">
   <div className={`card ${isFlipped && id === "maya8" ? "is-flipped" : ""}`}>
               <div className="card__face card__face--front">
                 <LazyLoad offset={300} onContentVisible={() => setIsLoaded(true)}>
