@@ -55,9 +55,6 @@ function Authors({authorsRef}) {
 </Splide>
      
  </div>
-      <p className='text-project_white text-center mt-5'>If you are interested in owning the complete rights of these novels and game design, contact Luis Jiménez in the email below:</p>
-      <p className="text-project_white/50 text-center mt-10 lg:w-1/2 text-lg font-semibold lg:mx-auto">luisfelipejimenezroldan@gmail.com</p>
-      <p className='text-project_white text-center mt-5'>Current highest bid, USD$870K</p>
     </section>
   )
 }
