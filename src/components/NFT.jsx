@@ -90,7 +90,7 @@ function NFT({NftRef, setIsModalOpen, setNftId}) {
      <h1 className="text-project_white lg:text-8xl text-4xl text-center font-bold">NFT collection</h1>
     <p className="text-project_white/50 text-center mt-5 lg:w-1/2 lg:text-lg font-semibold lg:mx-auto">Every piece of art that you get to own from our collection, its unique; there are 270 NFTs at OpenSea.</p>
           <div className='flex items-center justify-center mt-4'>
-               <a href="https://opensea.io/collection/projectaaa-collection" className='flex items-center gap-3 bg-project_black_shade px-4 py-2 lg:text-3xl text-xl font-extrabold text-project_white rounded-lg group cursor-pointer z-40'><h2>Explore</h2><FaExternalLinkAlt className='text-project_orange transition-all ease-linear duration-100 group-hover:translate-x-1'/></a>
+               <a href="https://opensea.io/collection/projectaaa-collection" target="_blank" className='flex items-center gap-3 bg-project_black_shade px-4 py-2 lg:text-3xl text-xl font-extrabold text-project_white rounded-lg group cursor-pointer z-40'><h2>Explore</h2><FaExternalLinkAlt className='text-project_orange transition-all ease-linear duration-100 group-hover:translate-x-1'/></a>
           </div>
           
                <Splide aria-label="CCG" options={{

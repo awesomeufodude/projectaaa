@@ -8,7 +8,7 @@ import { TheTeam } from "../constant/constantData"
 function Authors({authorsRef}) {
   const iconcomponents = [<FaBookOpen />, <FaPen />, <FaBriefcase />, <FaCode />, <FaUnity />]
   return (
-    <section className="min-h-screen box-border p-4 scroll-mt-14" ref={authorsRef}>
+    <section className="box-border p-4 scroll-mt-14" ref={authorsRef}>
       <h1 className="text-project_white lg:text-8xl text-4xl text-center font-bold">Project: A.A.A.</h1>
       <p className="text-project_white/50 text-center mt-10 lg:w-1/2 text-lg font-semibold lg:mx-auto">"This marvelous light manga novel is eager to see the light at any cost; every character brings life to the whole story. I've never seen this style before"</p>
       <p className='text-project_white text-center mt-5'>Aika Ato / Art director, LMN-Japan</p>
