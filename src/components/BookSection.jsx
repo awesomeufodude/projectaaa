@@ -9,62 +9,62 @@ const Data = [Book1, Book2, Book3];
 
 const BuyBooks = [
   {
-    title: "BUY VOLUME 1",
-    description: "The Chosen / Los Elegidos / Os Escolhidos",
+    title: 'BUY VOLUME 1',
+    description: 'The Chosen / Los Elegidos / Os Escolhidos',
     about:
-      "These light manga illustrated series, walks you through the collapse of humanity in the year 2039. Our destiny relies on Fallen angels, Notos, Brokens, Rottens, Logos and mecha armies. This is the first volume out of three.",
+      'These light manga illustrated series, walks you through the collapse of humanity in the year 2039. Our destiny relies on Fallen angels, Notos, Brokens, Rottens, Logos and mecha armies. This is the first volume out of three.',
     buttonlink: [
       {
-        title: "English",
-        link: "https://www.amazon.com/dp/B0BGCFK91B",
+        title: 'English',
+        link: 'https://www.amazon.com/dp/B0BGCFK91B',
       },
       {
-        title: "Español",
-        link: "https://www.amazon.com/dp/B0BG39Q75W",
+        title: 'Español',
+        link: 'https://www.amazon.com/dp/B0BG39Q75W',
       },
       {
-        title: "Português",
-        link: "",
+        title: 'Português',
+        link: 'https://www.amazon.com/dp/B0BWFTQFXC',
       },
     ],
   },
   {
-    title: "BUY VOLUME 2",
-    description: "The Cycle / El Ciclo / O Ciclo",
+    title: 'BUY VOLUME 2',
+    description: 'The Cycle / El Ciclo / O Ciclo',
     about:
-      "These light manga illustrated series, walks you through the collapse of humanity in the year 2039. Our destiny relies on Fallen angels, Notos, Brokens, Rottens, Logos and mecha armies. This is the second volume out of three.",
+      'These light manga illustrated series, walks you through the collapse of humanity in the year 2039. Our destiny relies on Fallen angels, Notos, Brokens, Rottens, Logos and mecha armies. This is the second volume out of three.',
     buttonlink: [
       {
-        title: "English",
-        link: "https://www.amazon.com/dp/B0BGCHRZJB",
+        title: 'English',
+        link: 'https://www.amazon.com/dp/B0BGCHRZJB',
       },
       {
-        title: "Español",
-        link: "https://www.amazon.com/dp/B0BFVT28SS",
+        title: 'Español',
+        link: 'https://www.amazon.com/dp/B0BFVT28SS',
       },
       {
-        title: "Português",
-        link: "",
+        title: 'Português',
+        link: 'https://www.amazon.com/dp/B0BWFV7HMX',
       },
     ],
   },
   {
-    title: "BUY VOLUME 3",
-    description: "The Three / El Tres / As Três",
+    title: 'BUY VOLUME 3',
+    description: 'The Three / El Tres / As Três',
     about:
-      "These light manga illustrated series, walks you through the collapse of humanity in the year 2039. Our destiny relies on Fallen angels, Notos, Brokens, Rottens, Logos and mecha armies. This is the last volume out of three.",
+      'These light manga illustrated series, walks you through the collapse of humanity in the year 2039. Our destiny relies on Fallen angels, Notos, Brokens, Rottens, Logos and mecha armies. This is the last volume out of three.',
     buttonlink: [
       {
-        title: "English",
-        link: "",
+        title: 'English',
+        link: 'http://www.amazon.com/dp/B0CDY1G23V',
       },
       {
-        title: "Español",
-        link: "",
+        title: 'Español',
+        link: 'http://www.amazon.com/dp/B0CDY4PDWK',
       },
       {
-        title: "Português",
-        link: "",
+        title: 'Português',
+        link: 'http://www.amazon.com/dp/B0CDY1L5MW',
       },
     ],
   },
