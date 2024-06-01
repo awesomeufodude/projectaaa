@@ -27,6 +27,13 @@ function OwningNovel() {
             >
               Contact Luis Jiménez  →
             </a>
+            <a
+              href="https://wa.me/56984605141"
+              className="block text-project_orange group-hover:text-project_orange/90 transition duration-200 mt-3 bg"
+              target="_blank"
+            >
+              +56984605141  →
+            </a>
              </div>
           
         </div>
